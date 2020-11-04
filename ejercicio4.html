@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Objeto</title>
+</head>
+<body>
+	<h3> Objeto Cliente</h3>
+
+    <script>
+        var Cliente = {
+                id:"001-11568",
+                cliente:"Merry Tineo",
+                gmail:"merryT01@gmail.com",
+                saldo:5900,
+                grati:150,
+                abonar: function(){
+                          return this.saldo + this.grati;
+                }
+        };
+
+        document.writeln("<br> ID: "+Cuenta.id+"</br>");
+        document.writeln("<br> Cliente: "+Cuenta.cliente+"</br>");
+        document.writeln("<br> Gmail: "+Cuenta.gmail+" Se le enviara esta información a su gmail</br>");
+        document.writeln("<br> Saldo: "+Cuenta.saldo+" </br>");
+        document.writeln(Cuenta.abonar());
+    </script>
+
+</body>
+</html>
+
+

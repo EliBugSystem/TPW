@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<title>Condicional</title>
+</head>
+<body>
+	<h1>Resuelve: </h1>
+	<script>
+		function Comprobar(){
+            let sum = document.frmRegistro.txtSum.value;
+            let res = document.frmRegistro.txtRes.value;
+            let mult = document.frmRegistro.txtMult.value;
+            let divi = document.frmRegistro.txtDivi.value;
+            //DETERMINA ACCIÓN ANTE CREDENCIALES
+            if (sum=="32" && res=="2" && mult=="152" && divi=="72"){
+               document.writeln("<p>Las respuestas con correctas</p>");
+            }else{
+               document.writeln("<p>Las respuestas con incorrectas</p>");
+            }
+        }
+	</script>
+	<form name="rpta" target="_self">
+    <label>Sumar 12 + 30</label>
+    <input type="text" name="txtSum" value="" size="20" /><br/>
+    <label>Restar 17-15</label>
+    <input type="text" name="txtRes" value="" size="20" /><br/>
+    <label>Multiplicar 19x8 </label>
+    <input type="text" name="txtMult" value="" size="20" /><br/>
+    <label>Dividir 144/2</label>
+    <input type="text" name="txtDivi" value="" size="20" /><br/>
+    <input type="button" value="COMPROBAR" name="btnCom"
+           onclick="Comprobar()" />
+</form>
+</body>
+</html>
